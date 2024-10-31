@@ -4,7 +4,7 @@ function addTask() {
     if (taskInput.value.trim() !== "") {
         const newTask = document.createElement("li");
 
-        const taskText =document.createTextNode(taskInput.value);
+        const taskText = document.createTextNode(taskInput.value);
         newTask.appendChild(taskText);
 
         const checkBox = document.createElement("input");
@@ -14,8 +14,12 @@ function addTask() {
         };
         newTask.prepend(checkBox);
 
-        teskInput.value = "";
+        // タスクをリストに追加
+        taskList.appendChild(newTask);
+
+        // 入力フィールドをクリア
+        taskInput.value = "";
     } else {
-        alert("タスクを入れろや")
+        alert("タスクを入れろや");
     }
 }
