@@ -16,6 +16,7 @@ function addTask() {
         checkBox.type = "checkbox";
         checkBox.onclick = function() {
             taskList.removeChild(newTask);
+            alert("やったな！！！！！")
         };
         newTask.prepend(checkBox);
 
