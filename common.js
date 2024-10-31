@@ -25,6 +25,6 @@ function addTask() {
         // 入力欄をクリア
         taskInput.value = "";
     } else {
-        alert("Please enter a task!");
+        alert("タスク入れろや");
     }
 }
